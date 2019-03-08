@@ -1,0 +1,13 @@
+# colormap reference:
+# https://matplotlib.org/examples/color/colormaps_reference.html
+{
+  "logfiles" : {
+    "cropped_wkl" : "/media/sandro/Volume/2019_ma_code/02_vunet_mine/logs/01_logs/w_kl/2019-03-05T00-24-07/",
+    "cropped_wokl_vae" : "/media/sandro/Volume/2019_ma_code/02_vunet_mine/logs/01_logs/wo_kl/2019-03-05T17-04-04/",
+    "cropped_wokl_ae" : "/media/sandro/Volume/2019_ma_code/02_vunet_mine/logs/01_logs/wo_kl/2019-03-06T11-09-49/",
+    "uncropped_wkl_vae" : "/media/sandro/Volume/2019_ma_code/02_vunet_mine/logs/02_logs/wo_kl/2019-03-07T10-16-05/"
+  },
+  "tags" : ["loss", "kl_loss", "kl_weight"],
+  "lw" : 5,
+  "cmap" : "Dark1"
+}
