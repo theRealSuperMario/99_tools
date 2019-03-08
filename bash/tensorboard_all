@@ -1,0 +1,11 @@
+#!/bin/bash      
+STR=""
+for f in $1/*; do
+    if [ -d ${f} ]; then
+        BASE=$(basename "$f")
+        STR="$STR,$BASE:$f"
+    fi
+done
+STR=${STR:1}
+echo $STR
+tensorboard_all --logdir $STR

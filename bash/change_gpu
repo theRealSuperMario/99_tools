@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+
+echo "using gpu $CUDA_VISIBLE_DEVICES"
+export CUDA_VISIBLE_DEVICES=$1
+echo "changed to gpu $CUDA_VISIBLE_DEVICES"

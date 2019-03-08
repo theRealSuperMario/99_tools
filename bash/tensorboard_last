@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+
+
+# setting default values
+# https://stackoverflow.com/questions/2013547/assigning-default-values-to-shell-variables-with-a-single-command-in-bash
+DIR=${1:-'.'}
+PORT=${2:-6006}
+
+# last directory
+# #https://stackoverflow.com/questions/14352290/listing-only-directories-using-ls-in-bash-an-examination
+LAST_DIR=$(ls -t "$1/" | head -1)
+echo "tensorboard --logdir "$1/$LAST_DIR" --port $PORT"
+tensorboard_all --logdir "$1/$LAST_DIR" --port $PORT
